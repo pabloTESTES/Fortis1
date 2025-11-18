@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_treino_background"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
+
+    <ImageView
+        android:id="@+id/ivIconeTreino"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tvTreinoTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/ivIconeTreino"
+        app:layout_constraintTop_toTopOf="@id/ivIconeTreino"
+        app:layout_constraintEnd_toStartOf="@id/ibVerTreino"
+        tools:text="Treino A - Peito e Triceps" />
+
+    <TextView
+        android:id="@+id/tvTreinoDetalhes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/tvTreinoTitulo"
+        app:layout_constraintTop_toBottomOf="@id/tvTreinoTitulo"
+        app:layout_constraintEnd_toEndOf="@id/tvTreinoTitulo"
+        tools:text="5 exercícios | 40 min" />
+
+    <TextView
+        android:id="@+id/tvTreinoDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/tvTreinoDetalhes"
+        app:layout_constraintTop_toBottomOf="@id/tvTreinoDetalhes"
+        tools:text="SEGUNDA" />
+
+    <ImageButton
+        android:id="@+id/ibVerTreino"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_play_circle"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLabelVerTreino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VER TREINO"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/Ford_Blue"
+        app:layout_constraintTop_toBottomOf="@id/ibVerTreino"
+        app:layout_constraintStart_toStartOf="@id/ibVerTreino"
+        app:layout_constraintEnd_toEndOf="@id/ibVerTreino"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
